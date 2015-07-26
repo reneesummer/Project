@@ -17,8 +17,8 @@ data=data.frame(subject,y,X)
 # part (2)
 feature=read.table("~/Desktop/data/features.txt") ; feature=feature[,2]
 names(X)=feature
-mean.index=grep(c("mean"),feature) # save index of columns whose variable name contains "mean"
-std.index=grep(c("std"),feature)   # save index of columns whose variable name contains "std"
+mean.index=grep(c("mean"),feature)+2 # save index of columns whose variable name contains "mean"
+std.index=grep(c("std"),feature)+2   # save index of columns whose variable name contains "std"
 
 mean.result=data[,mean.index] ; dim(mean.result) # saves the data set with variables containing charactors of"mean"
 std.result=data[,std.index]; dim(std.result)     # saves the data set with variables containing charactors of"std"
