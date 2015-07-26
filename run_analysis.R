@@ -15,13 +15,13 @@ subject=rbind(subject.test,subject.train); dim(subject) # combine test and train
 data=data.frame(subject,y,X)  
 
 # part (2)
-mean.result=apply(data,2,mean) ; mean.result
-std.result=apply(data,2,std) ; std.result
+feature=read.table("~/Desktop/data/features.txt") ; feature=feature[,2]
+names(X)=feature
+mean.index=grep(c("mean"),feature) # save index of columns whose variable name contains "mean"
+std.index=grep(c("std"),feature)   # save index of columns whose variable name contains "std"
 
-  # some calculation I am playing with
-  # which gives the mean of first variable in X based on its acativity lable
-  tapply(data[,3],data[,2],mean)
-
+mean.result=data[,mean.index] ; dim(mean.result) # saves the data set with variables containing charactors of"mean"
+std.result=data[,std.index]; dim(std.result)     # saves the data set with variables containing charactors of"std"
 
 # part (3)
   name = read.table("~/Desktop/data/activity_labels.txt")[,2]
