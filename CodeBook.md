@@ -17,6 +17,7 @@ data       : a complete data set with order of "Subject","activity lable" and "X
 
 # part (2)
 mean.result  : save subdet of data whose variable name contains charachtor "mean"
+
 std.result   : save subdet of data whose variable name contains charachtor "std"
 
 
