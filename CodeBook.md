@@ -16,8 +16,8 @@ data       : a complete data set with order of "Subject","activity lable" and "X
 
 
 # part (2)
-mean.result  : save mean of each feature 
-std.result   : save standard deviation of each feature 
+mean.result  : save subdet of data whose variable name contains charachtor "mean"
+std.result   : save subdet of data whose variable name contains charachtor "std"
 
 
 # part (3)
