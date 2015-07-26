@@ -5,7 +5,9 @@ train data for Subject, Actitivity type and all features in X are read and combi
 And by merging them together into one data set, a data frame is created named "data" with order of variables "Subject","activity lable" and "X".
 
 # In part (2):
-"apply" function is used on the "data" matrix created in part (1) on the columns with mean and std functions to extract mean and standard deviation for each measurement.
+By using "grep" function, index of columns whose variable name contains "mean" is saved and later on subsetting the complete data set gives the result, and is saved in data frame "mean.result".
+
+By using "grep" function, index of columns whose variable name contains "std" is saved and later on subsetting the complete data set gives the result, and is saved in data frame "std.result".
 
 # In part (3):
 My target is to replace numeric values on activity label variable and replace it according to the description in "activity_labels.txt". First read the file into "name". With the help of "sapply" function on activity label variable and by using a function I defined named"replace", all the numeric values in activity label variable are switched to their corresponding descriptive activity names.
