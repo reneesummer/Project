@@ -53,6 +53,6 @@ data$Subject=as.factor(data$Subject)
 result.activity=data[,2:563]%>% group_by(Activity_label)%>%summarise_each(funs(mean))
 result.subject=data[,1:563]%>% group_by(Subject)%>%summarise_each(funs(mean))
 
-write.csv(result.activity,file="group mean by activity.csv",row.names = FALSE)
-write.csv(result.subject,file="group mean by subject.csv",row.names = FALSE)
+write.table(result.activity,file="group mean by activity.txt",row.names = FALSE)
+write.table(result.subject,file="group mean by subject.txt",row.names = FALSE)
 
