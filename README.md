@@ -16,6 +16,6 @@ names for X data frame is read into vector "feature" from file "features.txt". A
 # In part (5):
 "dplyr" package have nice functions like "group_by" and "summarise_each" to help achieve our goal. I used piping in "dplyr", which is a very neat feature of "dplyr" for doing calculations.
 
-Average of the features in each group of "Activity_label" is saved in matrix named "result.activity" and a csv file for that named " group mean by activity.csv".
+Average of the features in each group of "Activity_label" is saved in matrix named "result.activity" and a csv file for that named " group mean by activity.txt".
 
-Average of the features in each group of "Activity_label" is saved in matrix named "result.subject" and a csv file for that named " group mean by subject.csv".
+Average of the features in each group of "Activity_label" is saved in matrix named "result.subject" and a csv file for that named " group mean by subject.txt".
